@@ -1,0 +1,55 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Navbar*/
+.navbar-light{
+    background-color: #000024;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-text {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*Footer*/
+footer{
+    background-color: #000024;
+    color: #ffffff;
+}
+
+/*Main*/
+.btn-primary{
+    background-color: #01e075;
+    border-color: #01e075;
+}
+
+.btn-primary:hover{
+    background-color: #00ae63;
+    border-color: #00ae63;
+}
+
+.btn-outline-success:hover{
+    background-color: #01e075;
+    border-color: #01e075;
+}
+
+main a{
+    color: #000024;
+    text-decoration: underline;
+}
+
+.status thead{
+    background-color: #000024;
+    color: #ffffff;
+}

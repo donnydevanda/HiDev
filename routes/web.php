@@ -14,5 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/job', function () {
+    return view('job');
+});
+
+Route::get('/status', function () {
+    return view('status');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/job/detail', function () {
+    return view('job-detail');
+});
+
+Route::get('/job/add', function () {
+    return view('job-add');
+});
+
+Route::get('/job/update', function () {
+    return view('job-update');
 });
