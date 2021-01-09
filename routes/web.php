@@ -30,3 +30,15 @@ Route::post('/job/add', 'JobController@jobAddPost')->name("jobAddPost");
 Route::get('/job/update/{slug}', 'JobController@jobUpdate')->name("jobUpdate");
 
 Route::post('/job/update', 'JobController@jobUpdatePost')->name("jobUpdatePost");
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

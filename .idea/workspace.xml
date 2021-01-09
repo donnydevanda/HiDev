@@ -117,6 +117,7 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mmdNM6NfO0TzicJ3fW5rcwcB7V" />
@@ -163,6 +164,7 @@
       <workItem from="1610163755057" duration="570000" />
       <workItem from="1610164353346" duration="3130000" />
       <workItem from="1610179061907" duration="7826000" />
+      <workItem from="1610202017258" duration="1238000" />
     </task>
     <servers />
   </component>
