@@ -15,26 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'JobController@index')->name("home");
 
-Route::get('/job', function () {
-    return view('job');
-});
+Route::get('/job', 'JobController@job')->name("job");
 
-Route::get('/status', function () {
-    return view('status');
-});
+Route::get('/status', 'TransactionController@index')->name("status");
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+Route::get('/profile/{slug}', 'UserController@index')->name("profile");
 
-Route::get('/job/detail', function () {
-    return view('job-detail');
-});
+Route::get('/job/detail/{slug}', 'JobController@jobDetail')->name("jobDetail");
 
-Route::get('/job/add', function () {
-    return view('job-add');
-});
+Route::get('/job/add', 'JobController@jobAdd')->name("jobAdd");
 
-Route::get('/job/update', function () {
-    return view('job-update');
-});
+Route::post('/job/add', 'JobController@jobAddPost')->name("jobAddPost");
+
+Route::get('/job/update/{slug}', 'JobController@jobUpdate')->name("jobUpdate");
+
+Route::post('/job/update', 'JobController@jobUpdatePost')->name("jobUpdatePost");

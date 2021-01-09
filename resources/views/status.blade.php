@@ -6,34 +6,26 @@
         <div class="text-center mt-5">
             <h1>Status</h1>
             <p>Please check this page periodically</p>
-
-            <table class="table table-hover mt-3">
+            <table class="table table-hover text-center mt-3">
                 <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Logo</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+                @foreach($transactions as $trans)
+                    <tr>
+                        <td><img src="{{asset('storage/'.$trans->jobs->image)}}" alt="" style="width: 120px; height: 120px"></td>
+                        <td class="align-middle">{{$trans->jobs->name}}</td>
+                        <td class="align-middle">{{$trans->jobs->role}}</td>
+                        <td class="align-middle">{{$trans->status}}</td>
+                        <td class="align-middle"><a href="{{route('jobDetail', $trans->jobs_id)}}"><button class="btn btn-primary">Withdraw</button></a></td>
+                    </tr>
+                @endforeach
                 </tbody>
             </table>
         </div>

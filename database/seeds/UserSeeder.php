@@ -13,7 +13,7 @@ class UserSeeder extends Seeder
     {
         DB::table('Users')->insert([
             [
-                'username' => 'Google Admin',
+                'name' => 'Google Admin',
                 'email' => 'gadmin@hd.com',
                 'password' => bcrypt('123'),
                 'number' => '0817601123',
@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
                 'role' => 'COMPANY'
             ],
             [
-                'username' => 'Facebook Admin',
+                'name' => 'Facebook Admin',
                 'email' => 'fbadmin@hd.com',
                 'password' => bcrypt('123'),
                 'number' => '0817601124',
@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
                 'role' => 'COMPANY'
             ],
             [
-                'username' => 'Muhammad Donny Devanda',
+                'name' => 'Muhammad Donny Devanda',
                 'email' => 'donny@hd.com',
                 'password' => bcrypt('123'),
                 'number' => '08176013215',
@@ -37,7 +37,7 @@ class UserSeeder extends Seeder
                 'role' => 'USER'
             ],
             [
-                'username' => 'Galuh Putra Warman',
+                'name' => 'Galuh Putra Warman',
                 'email' => 'galuh@hd.com',
                 'password' => bcrypt('123'),
                 'number' => '08176012345',
@@ -45,7 +45,7 @@ class UserSeeder extends Seeder
                 'role' => 'USER'
             ],
             [
-                'username' => 'Rico Kumala',
+                'name' => 'Rico Kumala',
                 'email' => 'rico@hd.com',
                 'password' => bcrypt('123'),
                 'number' => '08176012455',
@@ -53,7 +53,7 @@ class UserSeeder extends Seeder
                 'role' => 'USER'
             ],
             [
-                'username' => 'Adinda Nur Syakira',
+                'name' => 'Adinda Nur Syakira',
                 'email' => 'adinda@hd.com',
                 'password' => bcrypt('123'),
                 'number' => '081760152123',
@@ -61,7 +61,7 @@ class UserSeeder extends Seeder
                 'role' => 'USER'
             ],
             [
-                'username' => 'Darwin Samalo',
+                'name' => 'Darwin Samalo',
                 'email' => 'darwin@hd.com',
                 'password' => bcrypt('123'),
                 'number' => '08176012277',

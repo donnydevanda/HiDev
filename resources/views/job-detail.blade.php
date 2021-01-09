@@ -9,21 +9,15 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col my-auto mx-auto">
-                    <img src="{{asset('storage/images/001-google.png')}}" alt="" style="width: 300px">
+                    <img src="{{asset('storage/'.$jobs->image)}}" alt="" style="width: 300px; height: 300px">
                 </div>
                 <div class="col my-auto mx-auto">
-                    <p>Jakarta, Indonesia</p>
-                    <h1 class="h2">Google Inc.</h1>
-                    <h5>Software Engineer</h5>
-                    <p>Salary: Rp. 15.000.000</p>
+                    <p>{{$jobs->location}}</p>
+                    <h1 class="h2">{{$jobs->name}}</h1>
+                    <h5>{{$jobs->role}}</h5>
+                    <p>Salary: Rp. {{number_format($jobs->salary)}}</p>
                     <p><b>Description:</b></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur doloribus nam repellendus sunt? Ad dicta dolorem ei
-                        us hic ipsa, iusto nemo placeat quaerat ut voluptate! Aliquam aliquid ducimus eveniet hic in iusto laboriosam maiores, n
-                        esciunt nulla possimus soluta, suscipit? A ab ad adipisci architecto assumenda atque autem blanditiis dolor dolorum ea e
-                        os et expedita facere laudantium maxime natus necessitatibus, nemo officia omnis quae quod ratione repudiandae, sapiente se
-                        d similique sunt tempore ut veniam voluptate voluptatibus. Cum dicta quaerat quis ratione unde? A asp ernatur consectetur
-                        consequuntur, quas recusandae rerum saepe similique voluptatem.
-                    </p>
+                    <p>{{$jobs->description}}</p>
 
                     <button class="btn btn-primary">Apply Now</button>
                 </div>

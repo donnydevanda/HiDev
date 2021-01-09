@@ -7,32 +7,63 @@
             <h1>Job Add</h1>
         </div>
         <div class="container mt-5">
-            <form>
+            <form action="{{url('job/add')}}" method="POST" enctype="multipart/form-data">
+                {{csrf_field()}}
                 <div class="form-group">
-                    <label for="jobName">Company Name</label>
-                    <input type="text" class="form-control" id="jobName" placeholder="ex: HiDev">
+                    <label for="name">Company Name</label>
+                    <input type="text" class="form-control @error('name') is-invalid @enderror" name="name"/>
+                    @error('name')
+                    <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="form-group">
-                    <label for="jobLocation">Company Location</label>
-                    <input type="text" class="form-control" id="jobLocation" placeholder="ex: Jakarta, Indonesia">
+                    <label for="location">Company Location</label>
+                    <input type="text" class="form-control @error('location') is-invalid @enderror" name="location"/>
+                    @error('location')
+                    <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="form-group">
-                    <label for="jobRole">Job Role</label>
-                    <input type="text" class="form-control" id="jobRole" placeholder="ex: Software Engineer">
+                    <label for="role">Role</label>
+                    <input type="text" class="form-control @error('role') is-invalid @enderror" name="role"/>
+                    @error('role')
+                    <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="form-group">
-                    <label for="jobSalary">Salary</label>
-                    <input type="number" class="form-control" id="jobSalary" placeholder="ex: 15000000">
+                    <label for="salary">Salary</label>
+                    <input type="number" class="form-control @error('salary') is-invalid @enderror" name="salary"/>
+                    @error('salary')
+                    <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="form-group">
-                    <label for="jobDescription">Description</label>
-                    <textarea class="form-control" id="jobDescription" rows="3"></textarea>
+                    <label for="description">Description</label>
+                    <input type="text" class="form-control @error('description') is-invalid @enderror" name="description"/>
+                    @error('description')
+                    <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="form-group">
-                    <label for=jobImage">Company Logo</label>
-                    <input type="file" class="form-control-file" id="jobImage">
+                    <label for="Image">Image</label>
+                    <input type="file" class="form-control-file" name="image">
                 </div>
-                <button class="btn btn-primary mt-3">Add Job</button>
+                <input type="submit" value="Add Job" class="btn btn-primary mt-3 @error('image') is-invalid @enderror">
+                @error('image')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+                @enderror
             </form>
         </div>
     </main>
