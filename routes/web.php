@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'JobController@index')->name("home");
 
 Route::get('/job', function () {
     return view('job');
