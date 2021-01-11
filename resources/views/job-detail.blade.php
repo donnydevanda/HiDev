@@ -19,7 +19,18 @@
                     <p><b>Description:</b></p>
                     <p>{{$jobs->description}}</p>
 
-                    <button class="btn btn-primary">Apply Now</button>
+                    @if($auth && $userRole == 'USER')
+                        <form action="{{url('/job/detail')}}" method="POST" enctype="multipart/form-data">
+                            {{csrf_field()}}
+                            <div class="form-group">
+                                <input type="hidden" class="form-control" name="id" value="{{$jobs->id}}"/>
+                            </div>
+                            <input type="submit" value="Apply Now" class="btn btn-primary mt-3">
+                        </form>
+                    @endif
+                    @if($auth && $userRole == 'COMPANY')
+                        <a href="{{route('jobUpdate', $jobs->id)}}"><button class="btn btn-primary">Update Job</button></a>
+                    @endif
                 </div>
             </div>
         </div>

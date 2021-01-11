@@ -16,14 +16,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url('/job')}}">Job</a>
                 </li>
-                @if($auth)
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url('/status')}}">Status</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url('/profile')}}">Profile</a>
-                    </li>
-                @endif
             </ul>
 
             <!-- Right Side Of Navbar -->

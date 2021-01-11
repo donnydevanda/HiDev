@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-alt')
 
 @section('content')
 <div class="container">

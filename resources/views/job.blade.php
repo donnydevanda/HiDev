@@ -6,6 +6,9 @@
         <div class="text-center mt-5">
             <h1>Job Available</h1>
             <p>Showing {{$jobsCount}} Jobs</p>
+            @if($auth && $userRole == 'COMPANY')
+                <a href="{{ route('jobAdd')}}"><button class="btn btn-primary">Add Job</button></a>
+            @endif
         </div>
         <div class="row mb-5">
             @foreach($jobs as $job)

@@ -13,32 +13,38 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
+Route::group(['middleware' => 'logAuth'], function(){
+    Route::get('/profile/', 'UserController@profile')->name("profile");
+    Route::get('/profile/{slug}', 'UserController@index')->name("profileDetail");
+    Route::get('/status', 'TransactionController@index')->name("status");
+});
+
+Route::group(['middleware' => 'role:USER'], function(){
+    Route::post('/statusWithdraw', 'TransactionController@statusWithdraw')->name("statusWithdraw");
+    Route::post('/job/detail', 'TransactionController@jobDetailPost')->name("jobDetailPost");
+});
+
+Route::group(['middleware' => 'role:COMPANY'], function(){
+    Route::post('/statusAccept', 'TransactionController@statusAccept');
+    Route::post('/statusReject', 'TransactionController@statusReject');
+    Route::get('/job/update/{slug}', 'JobController@jobUpdate')->name("jobUpdate");
+    Route::post('/job/update', 'JobController@jobUpdatePost')->name("jobUpdatePost");
+    Route::get('/job/add', 'JobController@jobAdd')->name("jobAdd");
+    Route::post('/job/add', 'JobController@jobAddPost')->name("jobAddPost");
+});
+
 Route::get('/', 'JobController@index')->name("home");
-
 Route::get('/job', 'JobController@job')->name("job");
-
-Route::get('/status', 'TransactionController@index')->name("status");
-
-Route::get('/profile/{slug}', 'UserController@index')->name("profile");
-
 Route::get('/job/detail/{slug}', 'JobController@jobDetail')->name("jobDetail");
 
-Route::get('/job/add', 'JobController@jobAdd')->name("jobAdd");
 
-Route::post('/job/add', 'JobController@jobAddPost')->name("jobAddPost");
 
-Route::get('/job/update/{slug}', 'JobController@jobUpdate')->name("jobUpdate");
 
-Route::post('/job/update', 'JobController@jobUpdatePost')->name("jobUpdatePost");
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
