@@ -11,7 +11,7 @@ class JobSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('Jobs')->insert([
+        DB::table('jobs')->insert([
             [   'users_id' => '1',
                 'name' => 'Google',
                 'location' => 'Jakarta, Indonesia',
