@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84827b73-a37a-454f-b544-0841f3679f2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HiDev.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HiDev.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/JobSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/JobSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/navbar-alt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/navbar-alt.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/job-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/job-add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/job-detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/job-detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/job-update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/job-update.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/job.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/job.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/status.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/status.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +185,7 @@
       <workItem from="1610519371025" duration="177000" />
       <workItem from="1614436959741" duration="2198000" />
       <workItem from="1614473818349" duration="9041000" />
+      <workItem from="1614502226541" duration="3313000" />
     </task>
     <servers />
   </component>

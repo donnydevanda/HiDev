@@ -78,9 +78,19 @@ home .btn-outline-success:hover {
     width: 28%;
 }
 
-.home a {
-    color: #000024;
+.home .h5 {
+    color: #FCFEFF;
     text-decoration: underline;
+}
+
+.home {
+    color: #FCFEFF;
+    background-image: linear-gradient(#000024, #01E075);
+}
+
+.home .card {
+    color: #FCFEFF;
+    background-color: #000024;
 }
 
 .home .pagination {
@@ -92,9 +102,18 @@ home .btn-outline-success:hover {
 }
 
 /* Job */
+.job {
+    color: #FCFEFF;
+    background-image: linear-gradient(#000024, #01E075);
+}
+
 .job a {
     color: #000024;
     text-decoration: underline;
+}
+
+.job .h6 {
+    color: #000024;
 }
 
 /* Job Detail */
@@ -111,4 +130,14 @@ home .btn-outline-success:hover {
 .status thead {
     background-color: #000024;
     color: #FCFEFF;
+}
+
+/* Download */
+.download {
+    color: #FCFEFF;
+    background-image: linear-gradient(#000024, #01E075);
+}
+
+.download img {
+    width: 100%;
 }

@@ -24,6 +24,9 @@
                         <a class="nav-link" href="{{url('/profile')}}">Profile</a>
                     </li>
                 @endif
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('/download')}}">Download</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->

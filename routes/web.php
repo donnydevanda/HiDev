@@ -38,13 +38,4 @@ Route::group(['middleware' => 'role:COMPANY'], function(){
 Route::get('/', 'JobController@index')->name("home");
 Route::get('/job', 'JobController@job')->name("job");
 Route::get('/job/detail/{slug}', 'JobController@jobDetail')->name("jobDetail");
-
-
-
-
-
-
-
-
-
-
+Route::get('/download', 'JobController@download')->name("download");

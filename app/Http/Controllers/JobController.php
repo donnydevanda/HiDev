@@ -99,4 +99,9 @@ class JobController extends Controller
 
         return redirect()->back();
     }
+
+    function download(){
+        $auth = Auth::check();
+        return view('download', ['auth' => $auth]);
+    }
 }

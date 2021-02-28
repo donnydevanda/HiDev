@@ -24,7 +24,7 @@
                             <a href="{{route('jobDetail', $job->id)}}"><img class="card-img-top px-5 py-5" src="{{asset('storage/'.$job->image)}}" alt="{{$job->name}}"></a>
                             <div class="card-body">
                                 <a class="h5" href="{{route('jobDetail', $job->id)}}">{{$job->name}}</a>
-                                <p>{{$job->role}}</p>
+                                <p class="h6">{{$job->role}}</p>
                             </div>
                         </div>
                     </div>

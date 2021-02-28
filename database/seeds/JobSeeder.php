@@ -116,6 +116,19 @@ class JobSeeder extends Seeder
                 Develop platform microservices',
                 'image' => 'images/004-twitter.png'
             ],
+            [   'users_id' => '4',
+                'name' => 'Twitter',
+                'location' => 'Jakarta, Indonesia',
+                'role' => 'Web Tester',
+                'salary' => '12000000',
+                'description' => 'Design, develop, improve, and deploy high quality backend services and APIs.
+                Within a cross-functional team, collaborate with other engineers specializing in backend services, web frontend, mobile apps, and test automation, as well as product design and ideation.
+                Apply design patterns and design principles to produce maintainable and easy to extend code.
+                Handle integration with 3rd party API service (LinkAJA and other services)
+                Make sure latency is minimum, and can handle scalability for simultaneous of API call
+                Develop platform microservices',
+                'image' => 'images/004-twitter.png'
+            ],
             [   'users_id' => '5',
                 'name' => 'Nike',
                 'location' => 'Jakarta, Indonesia',
@@ -145,7 +158,7 @@ class JobSeeder extends Seeder
             [   'users_id' => '7',
                 'name' => 'Samsung',
                 'location' => 'Jakarta, Indonesia',
-                'role' => 'Sr. Frontend Developer',
+                'role' => 'Frontend Developer',
                 'salary' => '25000000',
                 'description' => 'Take design comps (both desktop and mobile) and develop them into fully functional WordPress sites.
                 These sites will be built with HTML, SASS, CSS, JavaScript, PHP, JQuery, Bootstrap, Git.

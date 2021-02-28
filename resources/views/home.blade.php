@@ -10,7 +10,7 @@
                 <p class="h4">Type company name on the field below and we will give you the best matching result.</p>
                 <form action="{{url('/')}}" class="form-inline mx-auto mt-5">
                     <input class="bar form-control mr-sm-2" type="search" name="search" placeholder="Search Job ..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-primary" type="submit">Search</button>
                 </form>
 
                 <div class="row mt-3">
