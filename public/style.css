@@ -2,54 +2,113 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/*Navbar*/
-.navbar-light{
+
+/* Navbar */
+.navbar-light {
     background-color: #000024;
 }
 
 .navbar-light .navbar-brand,
 .navbar-light .navbar-text {
-    color: #ffffff;
+    color: #FCFEFF;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
+    color: #FCFEFF;
 }
 
 .navbar-light .nav-item.active .nav-link,
 .navbar-light .nav-item:hover .nav-link {
-    color: #ffffff;
+    color: #FCFEFF;
     text-decoration: underline;
 }
 
-/*Footer*/
-footer{
+.navbar-toggler {
+    background-color: #FCFEFF;
+}
+
+
+/* Footer */
+footer {
     background-color: #000024;
-    color: #ffffff;
+    color: #FCFEFF;
 }
 
-/*Main*/
-.btn-primary{
-    background-color: #01e075;
-    border-color: #01e075;
+
+/* Main */
+
+/* All */
+.btn-primary {
+    background-color: #01E075;
+    border-color: #01E075;
 }
 
-.btn-primary:hover{
-    background-color: #00ae63;
-    border-color: #00ae63;
+.btn-primary:hover {
+    background-color: #00AE63;
+    border-color: #00AE63;
 }
 
-.btn-outline-success:hover{
-    background-color: #01e075;
-    border-color: #01e075;
+/* Home */
+.home h1 {
+    font-weight: bolder;
 }
 
-main a{
+.home h3 {
+    font-weight: bold;
+}
+
+.home .h4 {
+    font-weight: normal;
+}
+
+home .btn-outline-success:hover {
+    background-color: #01E075;
+    border-color: #01E075;
+}
+
+.home form {
+    width: 100%;
+}
+
+.home .bar {
+    width: 70%;
+}
+
+.home .btn {
+    width: 28%;
+}
+
+.home a {
     color: #000024;
     text-decoration: underline;
 }
 
-.status thead{
+.home .pagination {
+    justify-content: center;
+}
+
+.home .social-media img {
+    height: 50px;
+}
+
+/* Job */
+.job a {
+    color: #000024;
+    text-decoration: underline;
+}
+
+/* Job Detail */
+.job-detail img {
+    width: 100%;
+    height: 100%;
+}
+
+.job-detail .location {
+    color: #A3A3A3;
+}
+
+/* Status */
+.status thead {
     background-color: #000024;
-    color: #ffffff;
+    color: #FCFEFF;
 }

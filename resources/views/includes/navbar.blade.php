@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light px-5">
+<nav class="navbar navbar-expand-lg navbar-light px-5 py-3">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <span class="h3" style="color: #01e075; font-weight: bolder">Hi</span><span class="h3" style="color: #ffffff; font-weight: bold">Dev</span>

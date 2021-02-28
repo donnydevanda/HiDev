@@ -2,8 +2,8 @@
 @section('title', 'HiDev | Job Update')
 
 @section('content')
-    <main class="job-update px-5">
-        <div class="text-center mt-5">
+    <main class="job-update py-5">
+        <div class="text-center">
             <h1>Job Update</h1>
         </div>
         <div class="container mt-5">

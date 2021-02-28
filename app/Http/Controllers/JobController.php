@@ -10,7 +10,7 @@ class JobController extends Controller
 {
     function index(Request $request){
         $auth = Auth::check();
-        $jobs = Job::where('name', 'like', "%".$request->search."%")->paginate(3);
+        $jobs = Job::where('name', 'like', "%".$request->search."%")->paginate(5);
         return view('home', ['auth' => $auth, 'jobs' => $jobs]);
     }
 
